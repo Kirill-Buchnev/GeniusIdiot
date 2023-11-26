@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeniusIdiotClassLibrary\GeniusIdiot.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="settingsRemoveQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="settingsAddQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="userStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="userEndQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="userQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="userMainForm .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="settingsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
